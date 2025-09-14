@@ -10,4 +10,6 @@ from service.FriendService import FriendService
 friend = Friend(None,None,None,None,None,None)
 friendService = FriendService()
 
-friendService.createUser()
+
+show_friend= friendService.select_friend_by_id(70100100)
+print(f"amigo{show_friend}")
